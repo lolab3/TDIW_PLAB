@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "eRoba"
+AuthUserFile /home/TDIW/tdiw-k11/public_html/.htpasswd
+Require valid-user

@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Roboto', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+}
+
+.main {
+    padding: 30px 30px;
+}
+
+body {
+    background-color: #f5f6f8;
+}
+.logo {
+    background-color: #15181f;
+}
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+hr {
+    color: #ffffff;
+}
+
+ul {
+    list-style: none;
+}
+
+.navegador {
+   justify-content: space-between;
+   align-items:center;
+   padding: 30px;
+   display: flex;
+   font-size: 20px;
+   height: 60px;
+   background-color: #15181f;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu li {
+    padding: 10px;
+}
+
+
+.diferencia{
+    margin: 11px;
+}
+
+.apartat-roba{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border: 1px;
+}
+.a-roba{
+    margin: 20px;
+    padding: 2px 10px;
+    position:relative;
+}
+
+.a-roba:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.a-roba img{
+    width: 250px;
+
+}
+
+.apartat-calçat{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border: 1px;
+}
+.a-calçat{
+    margin: 20px;
+    padding: 2px 10px;
+    position:relative;
+}
+
+.a-calçat:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.a-calçat img{
+    width: 250px;
+}
+
+.apartat-complements{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border: 1px;
+}
+.a-complements{
+    margin: 20px;
+    padding: 2px 10px;
+    position:relative;
+}
+
+.a-complements:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.a-complements img{
+    width: 250px;
+}
+.boto-afegir {
+    transition-duration: 0.4s;
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+}
+
+.register a:hover, .navegador a:hover {
+    background-color: gray;
+    transition: 0.3s;
+    border-radius: 0.2rem;
+}
+
+.register a, .navegador a {
+    padding: 1rem 1rem;
+}
+
+
+

@@ -1,0 +1,19 @@
+-pag principal:
+	categories+fotos
+	barra cat+desplegable
+	carrito/registre
+	buscar...
+-seleccionat:
+	3 columnes: foto/info/preu
+grid template columns repeat min max
+	barra categories
+	(cada pag que s'entra)
+	(filtros)
+-roba seleccionada:
+	titol
+	descripcio
+	color
+	preu
+	talla
+	afegir cistella
+

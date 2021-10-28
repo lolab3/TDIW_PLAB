@@ -1,0 +1,17 @@
+Pràctiques TDIW
+Accés a la pàgina web
+http://tdiw-k11.deic-docencia.uab.cat
+
+Accés a la base de dades
+https://deic-docencia.uab.cat/phpmyadmin/
+
+Feu servir la mateixa combinació nom d'usuari - paraula de pas que feu servir per accedir als ordinadors del laboratori. Encara que canvieu la paraula de pas que feu servir per accedir al laboratori, això no canviarà la vostra paraula de pas per accedir a PHPMYADMIN.
+
+Accés als logs
+https://deic-docencia.uab.cat/TDIW/tdiw-k11/
+
+Trobareu els logs del darrer dia en format text pla, i els logs anteriors (fins a una setmana) en format comprimit
+
+Links colors:
+https://colorhunt.co/palette/fcffa6c1ffd7b5deffcab8ff
+https://colorhunt.co/palette/fef1e6f9d5a7ffb08590aacb

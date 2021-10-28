@@ -1,0 +1,74 @@
+body {
+    font-family:'Roboto', sans-serif;
+    color: #ffffff;
+    background-color: #f5f6f8;
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin: 60px 60px;
+}
+
+.registre {
+    background-color: #15181f;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    padding: 4rem 7rem;
+    display: flex;
+    justify-content: space-evenly;
+    height: 650px;
+}
+
+h1{
+    font-weight: bold;
+}
+
+input {
+    background-color: #1f232b;
+    border: 2px solid #1f232b;
+    border-radius: 0.2rem;
+    padding: 1.5rem 1rem;
+    margin: 10px 0px;
+}
+ img {
+     width: 700px;
+ }
+
+p{
+    margin: 0;
+}
+
+.formulari {
+    margin: 40px;
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-areas: 
+    'correu'
+    'password'
+    'submit'
+    'register';
+    
+}
+
+.form-item {
+    text-align: initial;
+}
+
+#submit-btn {
+    border-radius: 2rem;
+    min-width: 10rem;
+    background-color: #3884F2;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo a {
+    color: #1f232b;
+    text-decoration: none;
+}
