@@ -1,8 +1,8 @@
 <?php
 function connectaBD(){
     $servidor = "localhost";
-    $usuari = "tdiw";
-    $clau = "password";
+    $usuari = "tdiw-user";
+    $clau = "tdiw-password";
     try{
         $connexio = new PDO("mysql:host=$servidor;dbname=myDB;charset=UTF8", $usuari, $clau);
         $connexio->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
