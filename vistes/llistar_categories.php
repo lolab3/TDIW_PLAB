@@ -1,33 +1,29 @@
+#solament les 4 primeres imatges de cadascún
 
-<ul>
-    <?php foreach ($categories as $categoria): ?>
-        <li>
-            <a> <?php echo $categoria['nom'] ?></a>
-        </li>
-    <?php endforeach; ?>
-</ul>
-
-<!--
-<header>
-    <div class="logo">
-        <h1 id="main_title">eROBA</h1>
+<?php foreach ($roba as $producteRoba): ?>
+    <div class="a-roba">
+        <img src="imgs/producte1-1.jpg" />
+        <h2> <?php echo $producteRoba['preu'] ?> </h2>
+        <button class="boto-afegir"> Afegir </button>
     </div>
-</header>
+<?php endforeach; ?>
 
-<nav class="navegador">
-    <ul class="nav-menu">
-        <li>
-            <a href="#roba">Roba</a>
-        </li>
-        <li>
-            <a href="#calçat">Calçat</a>
-        </li>
-        <li>
-            <a href="#complements">Complements</a>
-        </li>
-    </ul>
-    <div class="register">
-        <a href="registre.html">Registra't</a>
-        <a href="inicia_sessio.html">Inicia sessió</a>
+
+<?php foreach ($calçat as $producteCalçat): ?>
+    <div class="a-calçat">
+        <img src="imgs/producte1-1.jpg" />
+        <h2> <?php echo $producteCalçat['preu'] ?> </h2>
+        <button class="boto-afegir"> Afegir </button>
     </div>
-</nav>-->
+<?php endforeach; ?>
+
+<?php foreach ($complements as $producteComplement): ?>
+    <div class="a-complements">
+        <img src="imgs/producte1-1.jpg" />
+        <h2> <?php echo $producteComplement['preu'] ?> </h2>
+        <button class="boto-afegir"> Afegir </button>
+    </div>
+<?php endforeach; ?>
+
+
+
