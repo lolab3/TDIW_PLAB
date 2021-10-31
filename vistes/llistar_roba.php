@@ -1,10 +1,14 @@
-<?php foreach ($roba as $producteRoba): ?>
+<h2> Roba </h2>
+<div class= "apartat-roba" id="roba">
     <div class="a-roba">
-        <img src="imgs/producte1-1.jpg" />
-        <h2> <?php echo $producteRoba['preu'] ?> </h2>
-        <button class="boto-afegir"> Afegir </button>
+        <?php foreach ($roba as $producteRoba): ?>
+            <img src="imgs/producte1-<?php echo $producteRoba["id"]; ?>.jpg" />
+            <h2> <?php echo $producteRoba['preu'] ?> </h2>
+            <button class="boto-afegir"> Afegir </button>
+        <?php endforeach; ?>
     </div>
-<?php endforeach; ?>
+</div>
+
 
 
 <!--<section class="main">
