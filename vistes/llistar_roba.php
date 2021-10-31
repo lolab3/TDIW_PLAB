@@ -1,13 +1,14 @@
-<h2> Roba </h2>
+#s'han de revisar els div
 <div class= "apartat-roba" id="roba">
-    <div class="a-roba">
-        <?php foreach ($roba as $producteRoba): ?>
-            <img src="imgs/producte1-<?php echo $producteRoba["id"]; ?>.jpg" />
-            <h2> <?php echo $producteRoba['preu'] ?> </h2>
+    <?php foreach ($roba as $producteRoba): ?>
+        <div class="a-roba">
+            <img src="imgs/producte<?php echo $producteRoba["id"]; ?>.jpg" />
+            <h2> <?php echo $producteRoba["preu"] ?> </h2>
             <button class="boto-afegir"> Afegir </button>
-        <?php endforeach; ?>
-    </div>
+        </div>
+    <?php endforeach; ?>
 </div>
+
 
 
 

@@ -2,7 +2,7 @@
 <ul>
     <?php foreach ($categories as $categoria): ?>
         <li>
-            <a> <?php echo $categoria['nom'] ?></a>
+            <a> <?php echo $categoria["nom"] ?></a>
         </li>
     <?php endforeach; ?>
 </ul>
