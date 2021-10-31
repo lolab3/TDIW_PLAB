@@ -6,7 +6,7 @@
 
     $connexio = connectaBD();
     $categories = getCategories($connexio);
-    $roba = getRoba($connexio, 1); // Aquesta crida és al model
+    $roba = getProds($connexio, 1); // Aquesta crida és al model
 
     include __DIR__.'/../vistes/llistar_roba.php';
 

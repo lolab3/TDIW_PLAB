@@ -1,5 +1,5 @@
 <?php
-    function consultaMencions($connexio,$categoria){
+    function getProds($connexio,$categoria){
         try {
             $consulta_productes = $connexio->prepare("SELECT id, nom, preu_actual, descripcio, u_stock FROM Productes WHERE categoria=" . categoria);
             $consulta_productes->execute();

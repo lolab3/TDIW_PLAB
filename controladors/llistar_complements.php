@@ -6,7 +6,7 @@
 
     $connexio = connectaBD();
     $categories = getCategories($connexio);
-    $complements = getComplements($connexio, 3); // Aquesta crida és al model
+    $complements = getProds($connexio, 3); // Aquesta crida és al model
 
     include __DIR__.'/../vistes/llistar_complements.php';
 
