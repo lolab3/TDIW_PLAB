@@ -1,8 +1,13 @@
 <?php
 
-require_once __DIR__.'/../models/connectaBD.php';
-require_once __DIR__.'/../models/consultaProds.php';
+    require_once __DIR__.'/../models/connectaBD.php';
+    require_once __DIR__.'/../models/consulta_categories.php';
+    require_once __DIR__.'/../models/consultaProds.php';
 
-$calçat = getCalçats(); // Aquesta crida és al model
+    $connexio = connectaBD();
+    $categories = getCategories($connexio);
+    $calçat = getCalçats($connexio, 2); // Aquesta crida és al model
 
-include __DIR__.'/../vistes/llistar_calçat.php';
+    include __DIR__.'/../vistes/llistar_calçat.php';
+
+?>
