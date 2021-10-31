@@ -1,3 +1,4 @@
+#PHP,HTML,JS,CSS
 <ul>
     <?php foreach ($categories as $categoria): ?>
         <li>

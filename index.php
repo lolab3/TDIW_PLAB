@@ -1,3 +1,4 @@
+#PHP
 <?php
     $accio= $_GET['accio'];
 
