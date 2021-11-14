@@ -2,26 +2,26 @@
 <?php
     $accio= $_GET['accio'];
 
-    switch($accio){
-        case 'llistar-roba':
-            include __DIR__.'/recurs_llistar_roba.php';
-            break;
-        case 'llistar-calçat':
-            include __DIR__.'/recurs_llistar_calçat.php';
-            break;
-        case 'llistar-complements':
-            include __DIR__.'/recurs_llistar_complements.php';
-            break;
-        case 'llistar-iniciasessio':
-            include __DIR__.'/recurs_iniciasessio.php';
-            break;
-        case 'llistar-registarte':
-            include __DIR__.'/recurs_registrarte.php';
-            break;
-        default:
-            include __DIR__.'/recurs_home.php';
-            break;
-    }
+        switch ($accio) {
+            case 'llistar-roba':
+                include __DIR__ . '/recurs_llistar_roba.php';
+                break;
+            case 'llistar-calçat':
+                include __DIR__ . '/recurs_llistar_calçat.php';
+                break;
+            case 'llistar-complements':
+                include __DIR__ . '/recurs_llistar_complements.php';
+                break;
+            case 'llistar-iniciasessio':
+                include __DIR__ . '/recurs_iniciasessio.php';
+                break;
+            case 'llistar-registarte':
+                include __DIR__ . '/recurs_registrarte.php';
+                break;
+            default:
+                include __DIR__ . '/recurs_home.php';
+                break;
+        }
 ?>
 
 
