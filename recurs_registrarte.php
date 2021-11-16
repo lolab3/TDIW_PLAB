@@ -1,6 +1,6 @@
 <html lang="ca">
     <head>
-        <title>inicia sessió</title>
+        <title>eRoba/registre</title>
     </head>
     <body>
         <div class="container">
