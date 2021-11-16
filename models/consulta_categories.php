@@ -1,4 +1,4 @@
-#PHP, MySQL
+
 <?php
     function getCategories($connexio){
         try {
