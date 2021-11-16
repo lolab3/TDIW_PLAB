@@ -14,10 +14,6 @@
 
     <?php include __DIR__ .'/controladors/llistar_complements.php';?>
 
-    <footer style="grid-area: footer;">
-        <h2 id="footer_title">eROBA</h2>
-        <p>About us</p>
-    </footer>
 
 </div>
 

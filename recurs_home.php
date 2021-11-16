@@ -17,7 +17,7 @@
             <h2> Roba </h2>
             <div class= "apartat-roba" id="roba">
                 <div class="a-roba">
-                    <img src="imgs/producte1.jpg" />
+                    <img src="imgs/producte1.webp" />
                     <h2> 15€ </h2>
                     <button class="boto-afegir"> Afegir </button>
                 </div>
@@ -89,12 +89,6 @@
             </div>
 
         </section>
-
-
-            <footer style="grid-area: footer;">
-                <h2 id="footer_title">eROBA</h2>
-                <p>About us</p>
-            </footer>
 
     </div>
 </body>

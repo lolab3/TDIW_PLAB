@@ -3,18 +3,22 @@
 </head>
 <header>
     <div class="logo">
-        <h1 id="main_title">eROBA</h1>
+        <a href="/TDIW_PLAB/index.php?accio=llistar"> <h1 id="main_title">eROBA</h1> </a>
     </div>
 </header>
 <div class="navegador">
     <ul class="nav-menu">
         <?php foreach ($categories as $fila) { ?>
-            <li> <a href="/recurs_llistar_<?php $fila['tipus'] ?>.php"><?php $fila['tipus'] ?></a> </li>
+            <li>
+                <a href="/TDIW_PLAB/index.php?accio=llistar-<?php echo $fila['tipus']; ?>">
+                    <?php echo $fila['tipus'] ?>
+                </a>
+            </li>
         <?php } ?>
     </ul>
     <div class="register">
-        <a href="recurs_registrarte.php">Registra't</a>
-        <a href="recurs_iniciasessio.php">Inicia sessió</a>
+        <a href="/TDIW_PLAB/index.php?accio=llistar-registrarte">Registra't</a>
+        <a href="/TDIW_PLAB/index.php?accio=llistar-iniciasessio">Inicia sessió</a>
     </div>
 </div>
 

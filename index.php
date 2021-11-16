@@ -15,7 +15,7 @@
             case 'llistar-iniciasessio':
                 include __DIR__ . '/recurs_iniciasessio.php';
                 break;
-            case 'llistar-registarte':
+            case 'llistar-registrarte':
                 include __DIR__ . '/recurs_registrarte.php';
                 break;
             default:
