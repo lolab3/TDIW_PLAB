@@ -15,9 +15,6 @@
     <form method="post" action="models/inserirUsuari.php" target="_self">
         <h1>Crea el teu compte ara</h1>
         <div class="formulari">
-            <div class="form-item">
-                <p>ID: </p> <input type="text" name="id" placeholder="id">
-            </div>
             <div class="form-item" style="grid-area: nom;">
                 <p>Nom: </p> <input type="text" name="nom" placeholder="Nom complet">
             </div>

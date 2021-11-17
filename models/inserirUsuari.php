@@ -2,9 +2,8 @@
     require_once __DIR__.'/../models/connectaBD.php';
     $connexio = connectaBD();
     try {
-        $usuari = "INSERT INTO usuari(id, nom, correu, contrasenya, adreca, poblacio, codi_postal) VALUES (:id, :nom, :correu, :contrasenya, :adreca, :poblacio, :codi_postal)";
+        $usuari = "INSERT INTO usuari(nom, correu, contrasenya, adreca, poblacio, codi_postal) VALUES (:nom, :correu, :contrasenya, :adreca, :poblacio, :codi_postal)";
         $inserta_usuari = $connexio->prepare($usuari);
-        $inserta_usuari->bindParam(':id', $_POST['id']);
         $inserta_usuari->bindParam(':nom', $_POST['nom']);
         $inserta_usuari->bindParam(':correu', $_POST['correu']);
         $password_hash = password_hash($_POST['contrasenya'], PASSWORD_BCRYPT);
