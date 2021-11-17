@@ -1,18 +1,12 @@
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=yes"/>
-    <link rel="stylesheet" type="text/css" href="css/registre.css">
-</head>
-
 <body>
 <div class="logo">
-    <a href="recurs_home.php"><h1 id="main_title">eROBA</h1></a>
+    <a href="/TDIW_PLAB/index.php?accio=default"><h1 id="main_title">eROBA</h1></a>
 </div>
 <section class="registre">
     <div class="imatge">
         <img src="imgs/register-img.jpg">
     </div>
-    <form method="post" action="models/inserirUsuari.php" target="_self">
+    <form method="post" action="controladors/inserirUsuari.php" target="_self">
         <h1>Crea el teu compte ara</h1>
         <div class="formulari">
             <div class="form-item" style="grid-area: nom;">
