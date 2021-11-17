@@ -77,7 +77,7 @@ ul {
 }
 
 .a-roba img{
-    width: 250px;
+    width: 200px;
 
 }
 
@@ -98,7 +98,7 @@ ul {
 }
 
 .a-calçat img{
-    width: 250px;
+    width: 200px;
 }
 
 .apartat-complements{
@@ -118,7 +118,7 @@ ul {
 }
 
 .a-complements img{
-    width: 250px;
+    width: 200px;
 }
 .boto-afegir {
     transition-duration: 0.4s;
@@ -137,5 +137,7 @@ ul {
     padding: 1rem 1rem;
 }
 
-
+img {
+    width: 200px;
+}
 

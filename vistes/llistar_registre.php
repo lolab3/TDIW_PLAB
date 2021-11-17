@@ -6,7 +6,7 @@
 
 <body>
 <div class="logo">
-    <a href="recurs_home.php"><h1 id="main_title">eROBA</h1></a>
+    <a href="/TDIW_PLAB/index.php?accio=home"><h1 id="main_title">eROBA</h1></a>
 </div>
 <section class="registre">
     <div class="imatge">

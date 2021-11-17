@@ -18,6 +18,9 @@
             case 'llistar-registrarte':
                 include __DIR__ . '/recurs_registrarte.php';
                 break;
+            case 'home':
+                include __DIR__ . '/recurs_home.php';
+                break;
             default:
                 include __DIR__ . '/recurs_home.php';
                 break;

@@ -3,14 +3,14 @@
 </head>
 <header>
     <div class="logo">
-        <a href="/TDIW_PLAB/index.php?accio=llistar"> <h1 id="main_title">eROBA</h1> </a>
+        <a href="/TDIW_PLAB/index.php?accio=home"> <h1 id="main_title">eROBA</h1> </a>
     </div>
 </header>
 <div class="navegador">
     <ul class="nav-menu">
         <?php foreach ($categories as $fila) { ?>
             <li>
-                <a href="/TDIW_PLAB/index.php?accio=llistar-<?php echo $fila['tipus']; ?>">
+                <a id="<?php echo $fila['tipus']; ?>">
                     <?php echo $fila['tipus'] ?>
                 </a>
             </li>

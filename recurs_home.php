@@ -5,6 +5,8 @@
 	<meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=yes"/>
 	<title>eRoba</title>
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/funcions.js"></script>
 </head>
 
 <body>
@@ -12,7 +14,31 @@
 
         <?php include __DIR__ .'/controladors/menu_superior.php';?>
 
-        <section class="main">
+        <div class="main">
+            <div class="diferencia">
+                <h2> Marques </h2>
+                <div class= "apartat-roba" id="roba">
+                    <div class="a-roba">
+                        <img src="imgs/logo1.png" />
+                    </div>
+                    <div class="a-roba">
+                        <img src="imgs/logo2.png" />
+                    </div>
+                    <div class="a-roba">
+                        <img src="imgs/logo3.png" />
+                    </div>
+                    <div class="a-roba">
+                        <img src="imgs/logo4.png" />
+                    </div>
+                </div>
+        </div>
+
+    </div>
+</body>
+</html>
+
+<!--
+<section class="main">
             <div class="diferencia">
             <h2> Roba </h2>
             <div class= "apartat-roba" id="roba">
@@ -89,7 +115,3 @@
             </div>
 
         </section>
-
-    </div>
-</body>
-</html>

@@ -1,4 +1,4 @@
-<div class="main">
+
     <h2> Roba </h2>
     <div class="diferencia">
         <div class= "apartat-roba" id="roba">
@@ -11,7 +11,7 @@
             <?php endforeach; ?>
         </div>
     </div>
-</div>
+
 
 
 
