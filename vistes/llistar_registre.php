@@ -28,10 +28,10 @@
                 <p>Password: </p> <input type="Password" name="contrasenya" placeholder="Password">
             </div>
             <div class="form-item" style="grid-area: adreça;">
-                <p>Adreça: </p> <input type="text" name="adreça" required maxlength="30" placeholder="Adreça">
+                <p>Adreça: </p> <input type="text" name="adreca" required maxlength="30" placeholder="Adreça">
             </div>
             <div class="form-item" style="grid-area: poblacio">
-                <p>Població:</p> <input type="text" name="població" required maxlength="30" placeholder="Població">
+                <p>Població:</p> <input type="text" name="poblacio" required maxlength="30" placeholder="Població">
             </div>
             <div class="form-item" style="grid-area: codi_postal;">
                 <p>Codi postal:</p> <input type="text" name="codi_postal" size="5" maxlength="5" placeholder="Codi Postal">
