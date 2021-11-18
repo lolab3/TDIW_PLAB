@@ -8,7 +8,7 @@ function comprovaUsuari($connexio) {
             $email->execute();
             $resultat = $email->fetch(PDO::FETCH_ASSOC);
 
-            if (count($resultat) > 0 && password_verify($_POST['password'], $resultat['password'])) {
+            if (count($resultat) > 0 && password_verify($_POST['contrasenya'], $resultat['contrasenya'])) {
                 return true;
             }
         }
