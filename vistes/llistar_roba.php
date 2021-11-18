@@ -4,7 +4,7 @@
         <div class= "apartat-roba" id="roba">
             <?php foreach ($roba as $producteRoba): ?>
                 <div class="a-roba">
-                    <a href=""> <img src="imgs/producte<?php echo $producteRoba["id"]; ?>.webp" /> </a>
+                    <a href="controladors/producte_indiv.php"> <img src="imgs/producte<?php echo $producteRoba["id"]; ?>.webp" /> </a>
                     <h2> <?php echo $producteRoba["preu_actual"] ?> </h2>
                     <button class="boto-afegir"> Afegir </button>
                 </div>
