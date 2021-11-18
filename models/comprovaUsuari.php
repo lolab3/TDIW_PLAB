@@ -2,7 +2,7 @@
 
 function comprovaUsuari($connexio) {
     try {
-        if (!empty($_POST['email']) && !empty($_POST['password'])) {
+        if (!empty($_POST['correu']) && !empty($_POST['contrasenya'])) {
             $email = $connexio->prepare('SELECT id, correu, contrasenya FROM usuari WHERE correu = :correu');
             $email->bindParam(':correu', $_POST['correu']);
             $email->execute();
