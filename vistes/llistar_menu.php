@@ -1,6 +1,3 @@
-<head>
-    <link rel="stylesheet" type="text/css" href="css/estilos.css">
-</head>
 <header>
     <div class="logo">
         <a href="/TDIW_PLAB/index.php?accio=home"> <h1 id="main_title">eROBA</h1> </a>

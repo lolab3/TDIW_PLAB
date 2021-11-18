@@ -13,4 +13,4 @@ foreach ($categories as $categoria){
 include_once __DIR__ .'/../vistes/llistar_menu.php';
 include_once __DIR__.'/../vistes/llistar_prod.php';
 
-
+?>
