@@ -7,6 +7,8 @@
 
     if($resultat) {
         include __DIR__ . '/../vistes/comprovaUsuari.php';
+    } else{
+        include __DIR__ . '/../vistes/comprovaUsuari.php';
     }
 ?>
 
