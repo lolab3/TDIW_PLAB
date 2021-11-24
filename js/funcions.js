@@ -1,35 +1,21 @@
-$(document).ready(function() {
-    $("#roba").click(function() {
+function carregarCat(id) {
         $.ajax({
-            url: "/TDIW_PLAB/controladors/llistar_roba.php", success:
+            url: "/TDIW_PLAB/index.php?accio=cat-" + id, success:
             function(result) {
                 $(".main").html(result);
             }
         })
-    })
-})
+}
 
-$(document).ready(function() {
-    $("#complements").click(function() {
-        $.ajax({
-            url: "/TDIW_PLAB/controladors/llistar_complements.php", success:
-                function(result) {
-                    $(".main").html(result);
-                }
-        })
+function carregarProd(id) {
+    $.post("/TDIW_PLAB/index.php?accio=producte", { myVar: id}, function(data) {
+        $(".main").html(data);
     })
-})
+}
 
-$(document).ready(function() {
-    $("#calçat").click(function() {
-        $.ajax({
-            url: "/TDIW_PLAB/controladors/llistar_calçat.php", success:
-                function(result) {
-                    $(".main").html(result);
-                }
-        })
-    })
-})
+
+
+
 
 
 

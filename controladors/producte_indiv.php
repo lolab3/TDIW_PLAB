@@ -5,13 +5,15 @@ require_once __DIR__.'/../models/consultaProds.php';
 require_once __DIR__.'/../models/consulta_categories.php';
 
 $connexio = connectaBD();
-$categories = getCategories($connexio);
-foreach ($categories as $categoria){
-    $cat = $categoria['categoria_id'];
-    $producte = getProds($connexio, $cat);
+$productes = getAllProds($connexio);
+
+foreach ($productes as $producte){
+    if($producte['id'] == $_POST['myVar']){
+        $prod = $producte;
+        include_once __DIR__.'/../vistes/llistar_prod.php';
+    }
 }
 
-include_once __DIR__ .'/../vistes/llistar_menu.php';
-include_once __DIR__.'/../vistes/llistar_prod.php';
+
 
 ?>

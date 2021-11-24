@@ -4,7 +4,7 @@
         <div class= "apartat-calçat" id="calçat">
             <?php foreach ($calçat as $producteCal): ?>
                 <div class="a-calçat">
-                    <a href="/../controladors/producte_indiv.php"><img src="imgs/producte<?php echo $producteCal["id"]; ?>.webp" /></a>
+                    <img onclick="return carregarProd('<?php echo $producteCal["id"]; ?>');" src="imgs/producte<?php echo $producteCal["id"]; ?>.webp" />
                     <h2> <?php echo $producteCal["preu_actual"] ?>€ </h2>
                     <button class="boto-afegir"> Afegir </button>
                 </div>

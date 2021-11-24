@@ -7,7 +7,7 @@
     <ul class="nav-menu">
         <?php foreach ($categories as $fila) { ?>
             <li>
-                <a id="<?php echo $fila['tipus']; ?>">
+                <a id="<?php echo $fila['tipus']; ?>" onclick="return carregarCat('<?php echo $fila['id']; ?>');">
                     <?php echo $fila['tipus'] ?>
                 </a>
             </li>

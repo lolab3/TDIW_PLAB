@@ -15,6 +15,18 @@
             case 'llistar-iniciasessio':
                 include __DIR__ . '/recurs_iniciasessio.php';
                 break;
+            case 'cat-1':
+                include __DIR__ . '/controladors/llistar_roba.php';
+                break;
+            case 'cat-3':
+                include __DIR__ . '/controladors/llistar_calçat.php';
+                break;
+            case 'cat-2':
+                include __DIR__ . '/controladors/llistar_complements.php';
+                break;
+            case 'producte':
+                include __DIR__ . '/controladors/producte_indiv.php';
+                break;
             case 'llistar-registrarte':
                 include __DIR__ . '/recurs_registrarte.php';
                 break;
