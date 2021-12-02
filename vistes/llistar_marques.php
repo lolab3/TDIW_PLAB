@@ -1,6 +1,6 @@
 <div class="main">
     <div class="diferencia">
-        <h2> Marques </h2>
+        <h2> Categories </h2>
         <div class= "apartat-roba" id="roba">
             <div class="a-cat">
                 <img onclick="return carregarCat('<?php echo $mostrarRoba['categoria_id'] ?>')" src="/TDIW_PLAB/imgs/producte<?php echo $mostrarRoba['id'] ?>.webp" />
