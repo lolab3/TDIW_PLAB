@@ -2,40 +2,47 @@
 <?php
     $accio= $_GET['accio'];
 
-        switch ($accio) {
-            case 'llistar-roba':
-                include __DIR__ . '/recurs_llistar_roba.php';
-                break;
-            case 'llistar-calçat':
-                include __DIR__ . '/recurs_llistar_calçat.php';
-                break;
-            case 'llistar-complements':
-                include __DIR__ . '/recurs_llistar_complements.php';
-                break;
-            case 'llistar-iniciasessio':
-                include __DIR__ . '/recurs_iniciasessio.php';
-                break;
-            case 'cat-1':
-                include __DIR__ . '/controladors/llistar_roba.php';
-                break;
-            case 'cat-3':
-                include __DIR__ . '/controladors/llistar_calçat.php';
-                break;
-            case 'cat-2':
-                include __DIR__ . '/controladors/llistar_complements.php';
-                break;
-            case 'producte':
-                include __DIR__ . '/controladors/producte_indiv.php';
-                break;
-            case 'llistar-registrarte':
-                include __DIR__ . '/recurs_registrarte.php';
-                break;
-            case 'home':
-                include __DIR__ . '/recurs_home.php';
-                break;
-            default:
-                include __DIR__ . '/recurs_home.php';
-                break;
+        if(!isset($accio)) {
+            header("Location: index.php?accio=home");
+            exit();
+        }
+        else {
+            switch ($accio) {
+
+                case 'llistar-roba':
+                    include __DIR__ . '/recurs_llistar_roba.php';
+                    break;
+                case 'llistar-calçat':
+                    include __DIR__ . '/recurs_llistar_calçat.php';
+                    break;
+                case 'llistar-complements':
+                    include __DIR__ . '/recurs_llistar_complements.php';
+                    break;
+                case 'llistar-iniciasessio':
+                    include __DIR__ . '/recurs_iniciasessio.php';
+                    break;
+                case 'cat-1':
+                    include __DIR__ . '/controladors/llistar_roba.php';
+                    break;
+                case 'cat-3':
+                    include __DIR__ . '/controladors/llistar_calçat.php';
+                    break;
+                case 'cat-2':
+                    include __DIR__ . '/controladors/llistar_complements.php';
+                    break;
+                case 'producte':
+                    include __DIR__ . '/controladors/producte_indiv.php';
+                    break;
+                case 'llistar-registrarte':
+                    include __DIR__ . '/recurs_registrarte.php';
+                    break;
+                case 'home':
+                    include __DIR__ . '/recurs_home.php';
+                    break;
+                default:
+                    include __DIR__ . '/recurs_home.php';
+                    break;
+            }
         }
 ?>
 
