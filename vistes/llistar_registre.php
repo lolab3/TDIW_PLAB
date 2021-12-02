@@ -25,7 +25,7 @@
                 <p>Població:</p> <input type="text" name="poblacio" required maxlength="30" placeholder="Població">
             </div>
             <div class="form-item" style="grid-area: codi_postal;">
-                <p>Codi postal:</p> <input type="text" name="codi_postal" size="5" maxlength="5" placeholder="Codi Postal">
+                <p>Codi postal:</p> <input type="number" name="codi_postal" size="5" maxlength="5" placeholder="Codi Postal">
             </div>
             <div class="form-item" style="grid-area: submit;">
                 <p>Registrar-me</p><input type="submit" name="enviar" id="submit-btn">
