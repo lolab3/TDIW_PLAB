@@ -16,6 +16,8 @@
 
         <?php include __DIR__ .'/controladors/llistar_marques.php';?>
 
+        <?php include __DIR__ .'/controladors/menu_compra.php';?>
+
 </body>
 </html>
 

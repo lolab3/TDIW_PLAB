@@ -16,6 +16,7 @@
     <div class="register">
         <a href="/TDIW_PLAB/index.php?accio=llistar-registrarte">Registra't</a>
         <a href="/TDIW_PLAB/index.php?accio=llistar-iniciasessio">Inicia sessió</a>
+        <a href="/TDIW_PLAB/index.php?accio=llistar-compra">Carro de compra</a>
     </div>
 </div>
 

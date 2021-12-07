@@ -157,3 +157,15 @@ img {
     padding: 10px;
 }
 
+.menu_inferior{
+    background-color: #15181f;
+    color: white;
+    padding: 10px;
+    justify-content: left;
+    display: flex;
+    align-items: center;
+}
+
+.menu_inferior h2{
+    padding-left: 100px;
+}

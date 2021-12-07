@@ -21,6 +21,9 @@
                 case 'llistar-iniciasessio':
                     include __DIR__ . '/recurs_iniciasessio.php';
                     break;
+                case 'llistar-compra':
+                    include __DIR__ .'/controladors/carro_compra.php';
+                    break;
                 case 'cat-1':
                     include __DIR__ . '/controladors/llistar_roba.php';
                     break;
