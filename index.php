@@ -1,7 +1,9 @@
 
 <?php
-    $accio= $_GET['accio'];
+    session_start();
+    #include __DIR__ . '/recurs_connectat_inicisessio.php';
 
+    $accio= $_GET['accio'];
         if(!isset($accio)) {
             header("Location: index.php?accio=home");
             exit();
@@ -39,6 +41,8 @@
                 case 'llistar-registrarte':
                     include __DIR__ . '/recurs_registrarte.php';
                     break;
+                case 'tancar-sessio':
+                    include __DIR__ . '/recurs_tancar-sessio.php';
                 case 'home':
                     include __DIR__ . '/recurs_home.php';
                     break;

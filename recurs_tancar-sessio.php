@@ -7,8 +7,8 @@
         <link rel="stylesheet" type="text/css" href="css/registre.css">
     </head>
     <body>
-        <div class="container">
-            <?php require __DIR__.'/controladors/registrar-te.php'; ?>
-        </div>
+    <div class="container">
+        <?php require __DIR__.'/controladors/tancar_sessio.php'; ?>
+    </div>
     </body>
-</html>
+    </html>

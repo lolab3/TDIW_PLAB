@@ -6,7 +6,7 @@
     $resultat = comprovaUsuari($connexio);
 
     if($resultat) {
-        include __DIR__ . '/../vistes/comprovaUsuari.php';
+        include __DIR__ .'/connectat_inici_sessio.php';
     } else{
         include __DIR__ . '/../vistes/comprovaUsuariinc.php';
     }

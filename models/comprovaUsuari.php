@@ -9,6 +9,7 @@ function comprovaUsuari($connexio) {
             $resultat = $email->fetch(PDO::FETCH_ASSOC);
 
             if (count($resultat) > 0 && password_verify($_POST['contrasenya'], $resultat['contrasenya'])) {
+                $_SESSION['user_id'] = $resultat['id'];
                 return true;
             }
         }

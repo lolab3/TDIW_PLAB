@@ -8,7 +8,7 @@
     </head>
     <body>
         <div class="container">
-            <?php require __DIR__.'/controladors/registrar-te.php'; ?>
+            <?php require __DIR__ . '/controladors/connectat_inici_sessio.php'; ?>
         </div>
     </body>
 </html>

@@ -1,1 +1,2 @@
-<?php echo "Error" ?>
+<p> <?= 'Ha hagut un error' ?> </p>
+

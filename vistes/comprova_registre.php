@@ -1,0 +1,1 @@
+<p> <?= 'Registrat correctament' ?> </p>
