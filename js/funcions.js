@@ -13,6 +13,15 @@ function carregarProd(id) {
     })
 }
 
+function carregarCarro() {
+    $.ajax({
+        url: "/TDIW_PLAB/index.php?accio=llistar-compra", success:
+        function(result){
+            $(".main").html(result);
+        }
+    })
+}
+
 
 
 

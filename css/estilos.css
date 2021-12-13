@@ -169,3 +169,9 @@ img {
 .menu_inferior h2{
     padding-left: 100px;
 }
+
+.producte_carro {
+    padding: 50px;
+    text-align: left;
+    display: flex;
+}
