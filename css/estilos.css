@@ -170,42 +170,29 @@ img {
     padding-left: 100px;
 }
 
-.carro_total {
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
 .carro_total h2{
     font-size: 26px;
     margin: 20px 0px;
     text-align: center;
 }
 
-.carro_total li{
-    border-radius: 3px;
-    padding: 25px 30px;
-    display: flex;
-    margin-bottom: 25px;
-    justify-content: space-around;
-}
-
-.carro_total .header_table {
-    color: white;
-    background-color: #15181f;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
-}
-
-.carro_total .fila_table {
+.carro_total table{
+    width: 80%;
     background-color: #EEEEEE;
+    margin-left: 100px;
+    margin-bottom: 100px;
 }
 
-.carro_total data{
-
+.carro_total th{
+    background-color: #15181f;
+    color: white;
+    text-space: 0.3rem;
 }
 
-.carro_total img{
-    max-width: 150px;
-    max-height: 150px;
+.carro_total th, td, tr{
+    padding: 20px;
+    border-radius: 3px;
+    text-align: center;
 }
+
+
