@@ -10,9 +10,15 @@
 </head>
 <div class="producte_indiv">
     <img src="/TDIW_PLAB/imgs/producte<?php echo $prod['id']; ?>.webp"></img>
-    <h1><?php echo $prod['nom']; ?></h1>
-    <p><?php echo $prod['descripcio']; ?></p>
-    <h2><?php echo $prod['preu_actual']; ?>€</h2>
-    <button class="boto-afegir-indiv"> Afegir </button>
+    <h2><?php echo "hola"; ?>€</h2>
+    <form method="post" action="controladors/carro-compra.php">
+        <input type="hidden" name="nom" value=$prod['nom']>
+        <input type="hidden" name="preu_actual" value=$prod['preu_actual']>
+        <h1><?php echo $prod['nom']; ?></h1>
+        <p><?php echo $prod['descripcio']; ?></p>
+        <h2><?php echo $prod['preu_actual']; ?>€</h2>
+        <input type="number" name="quantitat">
+        <input type="submit" value="Afegir" name="enviar" >
+    </form>
 </div>
 </html>

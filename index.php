@@ -1,8 +1,6 @@
 
 <?php
     session_start();
-    #include __DIR__ . '/recurs_connectat_inicisessio.php';
-
     $accio= $_GET['accio'];
         if(!isset($accio)) {
             header("Location: index.php?accio=home");
