@@ -21,15 +21,15 @@ function inserirUsuari($connexio) {
         $usuaris = $inserta_usuari->fetch(PDO::FETCH_ASSOC);
 
         if ($inserta_usuari->execute()) {
-            $_SESSION['user_id'] = $usuaris['id'];
+            $missatge= "T'has registrat correctament!";
             $resultat[0] =true;
-            $resultat[1] = null;
+            $resultat[1] = $missatge;
             return $resultat;
         }
         else{
-            $errorLogin= "Nom d'usuari i/o contrasenya incorrectes";
+            $missatge= "Nom d'usuari i/o contrasenya incorrectes";
             $resultat[0] =false;
-            $resultat[1] = $errorLogin;
+            $resultat[1] = $missatge;
             return $resultat;
         }
     } catch(PDOException $e) {

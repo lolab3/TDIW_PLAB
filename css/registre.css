@@ -82,3 +82,8 @@ p{
 input{
     color:white;
 }
+
+.reg {
+    color: #1f232b;
+    text-decoration: none;
+}
