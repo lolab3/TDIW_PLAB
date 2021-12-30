@@ -1,60 +1,59 @@
 
 <?php
     session_start();
-
-
+    error_reporting(E_ALL ^ E_NOTICE);
     $accio= $_GET['accio'];
-        if(!isset($accio)) {
-            header("Location: index.php?accio=home");
-            exit();
+    if(!isset($accio)) {
+        header("Location: index.php?accio=home");
+        exit();
+    }
+    else {
+        switch ($accio) {
+            case 'llistar-roba':
+                include __DIR__ . '/recurs_llistar_roba.php';
+                break;
+            case 'llistar-calçat':
+                include __DIR__ . '/recurs_llistar_calçat.php';
+                break;
+            case 'llistar-complements':
+                include __DIR__ . '/recurs_llistar_complements.php';
+                break;
+            case 'llistar-iniciasessio':
+                #session_start();
+                include __DIR__ . '/recurs_iniciasessio.php';
+                break;
+            case 'llistar-compra':
+                include __DIR__ .'/controladors/inserir_.php';
+                break;
+            case 'cat-1':
+                include __DIR__ . '/controladors/llistar_roba.php';
+                break;
+            case 'cat-3':
+                include __DIR__ . '/controladors/llistar_calçat.php';
+                break;
+            case 'cat-2':
+                include __DIR__ . '/controladors/llistar_complements.php';
+                break;
+            case 'producte':
+                include __DIR__ . '/controladors/producte_indiv.php';
+                break;
+            case 'llistar-registrarte':
+                include __DIR__ . '/recurs_registrarte.php';
+                break;
+            case 'tancar-sessio':
+                include __DIR__ . '/recurs_tancar-sessio.php';
+                break;
+            case 'llistar-inici_sessio':
+                include __DIR__ . '/recurs_inici_sessio.php';
+                break;
+            case 'home':
+                include __DIR__ . '/recurs_home.php';
+                break;
+            default:
+                include __DIR__ . '/recurs_home.php';
+                break;
         }
-        else {
-            switch ($accio) {
-
-                case 'llistar-roba':
-                    include __DIR__ . '/recurs_llistar_roba.php';
-                    break;
-                case 'llistar-calçat':
-                    include __DIR__ . '/recurs_llistar_calçat.php';
-                    break;
-                case 'llistar-complements':
-                    include __DIR__ . '/recurs_llistar_complements.php';
-                    break;
-                case 'llistar-iniciasessio':
-                    include __DIR__ . '/recurs_iniciasessio.php';
-                    break;
-                case 'llistar-compra':
-                    include __DIR__ .'/controladors/inserir_.php';
-                    break;
-                case 'cat-1':
-                    include __DIR__ . '/controladors/llistar_roba.php';
-                    break;
-                case 'cat-3':
-                    include __DIR__ . '/controladors/llistar_calçat.php';
-                    break;
-                case 'cat-2':
-                    include __DIR__ . '/controladors/llistar_complements.php';
-                    break;
-                case 'producte':
-                    include __DIR__ . '/controladors/producte_indiv.php';
-                    break;
-                case 'llistar-registrarte':
-                    include __DIR__ . '/recurs_registrarte.php';
-                    break;
-                case 'tancar-sessio':
-                    include __DIR__ . '/recurs_tancar-sessio.php';
-                    break;
-                case 'llistar-inici_sessio':
-                    include __DIR__ . '/recurs_inici_sessio.php';
-                    break;
-                case 'home':
-                    include __DIR__ . '/recurs_home.php';
-                    break;
-                default:
-                    include __DIR__ . '/recurs_home.php';
-                    break;
-            }
-        }
+    }
 ?>
 
 

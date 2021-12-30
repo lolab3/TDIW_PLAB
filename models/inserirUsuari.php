@@ -21,6 +21,7 @@ function inserirUsuari($connexio) {
         $usuaris = $inserta_usuari->fetch(PDO::FETCH_ASSOC);
 
         if ($inserta_usuari->execute()) {
+            $_SESSION['user_id'] = $usuaris['id'];
             $resultat[0] =true;
             $resultat[1] = null;
             return $resultat;
