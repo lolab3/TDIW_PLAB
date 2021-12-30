@@ -1,5 +1,7 @@
 <?php
 function inserirUsuari($connexio) {
+    $resultat[0] =false;
+    $resultat[1] = null;
     try {
         $usuari = "INSERT INTO usuari(nom, correu, contrasenya, adreca, poblacio, codi_postal) VALUES (:nom, :correu, :contrasenya, :adreca, :poblacio, :codi_postal)";
         $inserta_usuari = $connexio->prepare($usuari);
@@ -19,11 +21,19 @@ function inserirUsuari($connexio) {
         $usuaris = $inserta_usuari->fetch(PDO::FETCH_ASSOC);
 
         if ($inserta_usuari->execute()) {
-            return true;
+            $resultat[0] =true;
+            $resultat[1] = null;
+            return $resultat;
+        }
+        else{
+            $errorLogin= "Nom d'usuari i/o contrasenya incorrectes";
+            $resultat[0] =false;
+            $resultat[1] = $errorLogin;
+            return $resultat;
         }
     } catch(PDOException $e) {
         echo "Error: " . $e->getMessage();
     }
-    return false;
+    return $resultat;
 }
 ?>
