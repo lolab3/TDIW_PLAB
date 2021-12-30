@@ -6,7 +6,7 @@
     <div class="imatge">
         <img src="imgs/register-img.jpg">
     </div>
-    <form method="post" action="controladors/inserirUsuari.php" target="_blank">
+    <form method="post" action="controladors/inserirUsuari.php">
         <h1>Crea el teu compte ara</h1>
         <div class="formulari">
             <div class="form-item" style="grid-area: nom;">
