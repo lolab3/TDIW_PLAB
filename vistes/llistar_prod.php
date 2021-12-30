@@ -9,7 +9,7 @@
     <script src="js/funcions.js"></script>
 </head>
 <div class="producte_indiv">
-    <img src="/TDIW_PLAB/imgs/producte<?php echo $prod['id']; ?>.webp"></img>
+    <img src="/TDIW_PLAB/imgs/producte<?php echo $prod['id']; ?>.webp">
     <h2><?php echo "hola"; ?>€</h2>
     <form method="post" action="controladors/carro-compra.php">
         <input type="hidden" name="nom" value=$prod['nom']>

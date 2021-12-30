@@ -13,35 +13,18 @@
             </li>
         <?php } ?>
     </ul>
-    <div class="register">
-        <a href="/TDIW_PLAB/index.php?accio=llistar-registrarte">Registra't</a>
-        <a href="/TDIW_PLAB/index.php?accio=llistar-iniciasessio">Inicia sessió</a>
-        <a onclick="return carregarCarro();"> Carro de compra</a>
+    <input type="checkbox" id="btn-menu">
+    <div class="btn-menu">
+        <label for="btn-menu">☰</label>
     </div>
 </div>
 
 
-<!--
-<header>
-    <div class="logo">
-        <h1 id="main_title">eROBA</h1>
-    </div>
-</header>
+<div class="icon-menu">
+    <a href="/TDIW_PLAB/index.php?accio=llistar-registrarte">Registra't</a>
+    <a href="/TDIW_PLAB/index.php?accio=llistar-iniciasessio">Inicia sessió</a>
+    <a onclick="return carregarCarro();"> Carro de compra</a>
+    <label for="btn-menu">✖️</label>
 
-<nav class="navegador">
-    <ul class="nav-menu">
-        <li>
-            <a href="#roba">Roba</a>
-        </li>
-        <li>
-            <a href="#calçat">Calçat</a>
-        </li>
-        <li>
-            <a href="#complements">Complements</a>
-        </li>
-    </ul>
-    <div class="register">
-        <a href="registre.html">Registra't</a>
-        <a href="inicia_sessio.html">Inicia sessió</a>
-    </div>
-</nav>-->
+</div>
+
