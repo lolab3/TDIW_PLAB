@@ -6,7 +6,7 @@
     $user = sessioUser($connexio);
 
     if(!empty($user)) {
-        #<br> Benvingut. <?= $user['email'];
+        #<br> Benvingut. <?= $user['correu'];
         include __DIR__ . '/../vistes/comprovaUsuari.php';
     } else{
         header("Location: index.php?accio=home");

@@ -1,12 +1,12 @@
 <body>
 <div class="logo">
-    <a href="/TDIW_PLAB/index.php?accio=home""><h1 id="main_title">eROBA</h1></a>
+    <a href="/TDIW_PLAB/index.php?accio=home"><h1 id="main_title">eROBA</h1></a>
 </div>
 <section class="registre">
     <div class="imatge">
         <img src="imgs/register-img.jpg">
     </div>
-    <form method="post" action="controladors/comprovarUsuari.php" target="_blank">
+    <form method="post" action="controladors/iniciar_sessio.php">
         <h1>Accedeix al teu compte des d'aquí</h1>
         <div class="formulari">
             <div class="form-item" style="grid-area: correu;">

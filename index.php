@@ -1,6 +1,8 @@
 
 <?php
     session_start();
+
+
     $accio= $_GET['accio'];
         if(!isset($accio)) {
             header("Location: index.php?accio=home");
@@ -22,7 +24,7 @@
                     include __DIR__ . '/recurs_iniciasessio.php';
                     break;
                 case 'llistar-compra':
-                    include __DIR__ .'/controladors/carro_compra.php';
+                    include __DIR__ .'/controladors/inserir_.php';
                     break;
                 case 'cat-1':
                     include __DIR__ . '/controladors/llistar_roba.php';
@@ -41,6 +43,10 @@
                     break;
                 case 'tancar-sessio':
                     include __DIR__ . '/recurs_tancar-sessio.php';
+                    break;
+                case 'llistar-inici_sessio':
+                    include __DIR__ . '/recurs_inici_sessio.php';
+                    break;
                 case 'home':
                     include __DIR__ . '/recurs_home.php';
                     break;
