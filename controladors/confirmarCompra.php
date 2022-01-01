@@ -7,6 +7,7 @@
 
     $resultat = inserirProd($connexio);
     $llista_ids = array_values(array_unique($_SESSION['cistella']));
+
     $quantitat_prod_indiv = array_count_values($_SESSION['cistella']);
     $resultats = getProd($connexio, $llista_ids);
     $id_usuari = $_SESSION['ID'];

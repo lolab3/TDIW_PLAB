@@ -30,13 +30,13 @@ function getComandaID($connexio, $id_usuari){
 
 function inserirProdComandes($connexio,$llista_ids, $resultats, $quantitat_prod_indiv, $id_comanda) {
     try {
-        for($i=0;$i<count($llista_ids);$i++) {
-            $comanda_productes = "INSERT INTO comanda_productes(id, productes_id, preu_historic, unitat_productes, nom_producte) VALUES ('{$id_comanda['max(id)']}','{$llista_ids[$i]}', '{$resultats[$i]['preu_actual']}', '{$quantitat_prod_indiv[$llista_ids[$i]]}', '{$resultats[$i]['nom']}')";
+        $arr_length = count($llista_ids);
+        for($i=0;$i<$arr_length;$i++) {
+            $comanda_productes = "INSERT INTO comanda_productes(id_comanda, productes_id, preu_historic, unitat_productes, nom_producte) VALUES ('{$id_comanda['max(id)']}','{$llista_ids[$i]}', '{$resultats[$i]['preu_actual']}', '{$quantitat_prod_indiv[$llista_ids[$i]]}', '{$resultats[$i]['nom']}')";
             $inserta_comanda_productes = $connexio->prepare($comanda_productes);
             $comandes_productes = $inserta_comanda_productes->execute();
-            return $comandes_productes;
         }
-        $_SESSION['comanda_id'] = $_SESSION['comanda_id'] + 1;
+        return $comandes_productes;
     } catch(PDOException $e) {
         echo "Error: " . $e->getMessage();
     }
