@@ -22,6 +22,15 @@ function carregarCarro() {
     })
 }
 
+function confirmaCompra() {
+    $.ajax({
+        url: "/TDIW_PLAB/index.php?accio=confirmaCompra", success:
+            function(result){
+                $(".main").html(result);
+            }
+    })
+}
+
 
 
 

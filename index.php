@@ -54,6 +54,9 @@
             case 'llistar-inici_sessio':
                 include __DIR__ . '/recurs_inici_sessio.php';
                 break;
+            case 'confirmaCompra':
+                include __DIR__ . '/controladors/confirmarCompra.php';
+                break;
             case 'home':
                 include __DIR__ . '/recurs_home.php';
                 break;

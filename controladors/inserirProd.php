@@ -12,12 +12,10 @@
 
     $_SESSION['total_productes'] = $_SESSION['total_productes'] + $unitats_demanades;
     $_SESSION['preu_total'] = $_SESSION['preu_total'] + ($preu_historic * $unitats_demanades);
-    #print_r($_SESSION['cistella']);
-    #print_r("/ {$_SESSION['total_productes']} /");
-    #print_r("{$_SESSION['preu_total']} /");
 
-    header("Location: http://localhost/TDIW_PLAB/index.php?accio=home");
+    echo '<script>alert("Producte inserit correctament a la cistella");</script>';
 ?>
+<meta http-equiv="refresh" content="0;url=/../TDIW_PLAB/index.php?accio=home">
 
 <!    $carrito = array();
 $carrito = !empty($_SESSION['user_id'])?$_SESSION['user_id']:NULL;
