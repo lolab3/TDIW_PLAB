@@ -1,7 +1,12 @@
-
 <?php
     session_start();
+    if(!isset($_SESSION['ID'])){
+        $_SESSION['cistella'] = array();
+        $_SESSION['total_productes'] = 0;
+        $_SESSION['preu_total'] = 0;
+    }
     error_reporting(E_ALL ^ E_NOTICE);
+
     $accio= $_GET['accio'];
     if(!isset($accio)) {
         header("Location: index.php?accio=home");
@@ -23,7 +28,7 @@
                 include __DIR__ . '/recurs_iniciasessio.php';
                 break;
             case 'llistar-compra':
-                include __DIR__ .'/controladors/inserir_.php';
+                include __DIR__ .'/controladors/getCarrito.php';
                 break;
             case 'cat-1':
                 include __DIR__ . '/controladors/llistar_roba.php';

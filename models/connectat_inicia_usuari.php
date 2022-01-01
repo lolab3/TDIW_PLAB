@@ -2,9 +2,9 @@
 function sessioUser($connexio)
 {
     try {
-        if (isset($_SESSION['user_id'])) {
+        if (isset($_SESSION['ID'])) {
             $id = $connexio->prepare('SELECT id, nom, correu FROM usuari WHERE id = :id');
-            $id->bindParam(':id', $_SESSION['user_id']);
+            $id->bindParam(':id', $_SESSION['ID']);
             $id->execute();
             $resultat = $id->fetch(PDO::FETCH_ASSOC);
 

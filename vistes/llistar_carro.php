@@ -1,21 +1,21 @@
 
 <div class="carro_total">
-
     <h2>Carro compra</h2>
     <table class="carro_table">
         <tr class="header_table">
+            <th class="data">Imatge</th>
             <th class="data">Nom</th>
-            <th class="data">Preu</th>
+            <th class="data">Preu unitari</th>
             <th class="data">Quantitat</th>
         </tr>
-        c
-        <?php if(isset($_SESSION['user_id'])): ?>
-            <?php foreach ($_SESSION['user_id'] as $a => $i): ?>
-            <tr class="fila_table">
+        <?php if(isset($_SESSION['ID'])): ?>
+            <?php print_r($_SESSION); ?>
+            <?php foreach ($_SESSION as $a => $i): ?>
+                <tr class="fila_table">
                 <?php foreach($i as $b => $o): ?>
                     <td class="data"><?php echo $o; ?></td>
                 <?php endforeach; ?>
-            </tr>
+                </tr>
             <?php endforeach; ?>
         <?php endif; ?>
     </table>

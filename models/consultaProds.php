@@ -20,6 +20,23 @@
         }
         return($allProductes);
     }
+
+
+    function getProd($connexio,$llista_ids){
+        try {
+            $resultat = array();
+            foreach ($llista_ids as $ids){
+                $id = $connexio->prepare("SELECT id, nom, preu_actual FROM Productes WHERE id = '" . $ids . "'");
+                $id->execute();
+                $res = $id->fetch(PDO::FETCH_ASSOC);
+                array_push($resultat, $res);
+            }
+            print_r($resultat);
+        } catch(PDOException $e) {
+            echo "Error: " . $e->getMessage();
+        }
+        return($resultat);
+    }
 ?>
 
 

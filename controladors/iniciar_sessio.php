@@ -1,7 +1,7 @@
 <?php
     session_start();
     error_reporting(E_ALL ^ E_NOTICE);
-    if(isset($_SESSION['user_id'])){
+    if(isset($_SESSION['ID'])){
         #echo "sesion";
         include __DIR__ . '/connectat_inici_sessio.php';
     } else if(isset($_POST['correu']) && isset($_POST['contrasenya'])){

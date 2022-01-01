@@ -13,7 +13,7 @@ function comprovaUsuari($connexio) {
 
 
             if (count($resultat) > 0 && password_verify($_POST['contrasenya'], $resultat['contrasenya'])) {
-                $_SESSION['user_id'] = $resultat['id'];
+                $_SESSION['ID'] = $resultat['id'];
                 $resultat[0] =true;
                 $resultat[1] = null;
                 return $resultat;
