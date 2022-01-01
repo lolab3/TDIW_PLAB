@@ -1,6 +1,6 @@
 
 <div class="carro_total">
-    <h2>Carro compra</h2>
+    <h2>Cistella de la compra</h2>
     <table class="carro_table">
         <tr class="header_table">
             <th class="data">Nom</th>
@@ -21,8 +21,8 @@
         <?php endif; ?>
     </table>
 
-    <?php echo "Total de productes: $quantitat_prods"?>
-    <?php echo "Preu total: $preu_total"?>
+    <a href="/TDIW_PLAB/index.php?accio=eliminarCistella" class="link" ><p>Buidar cistella</p></a>
+
 
 </div>
 

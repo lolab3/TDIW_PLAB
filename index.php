@@ -48,6 +48,9 @@
             case 'tancar-sessio':
                 include __DIR__ . '/recurs_tancar-sessio.php';
                 break;
+            case 'eliminarCistella':
+                include __DIR__ . '/controladors/eliminarCarrito.php';
+                break;
             case 'llistar-inici_sessio':
                 include __DIR__ . '/recurs_inici_sessio.php';
                 break;
