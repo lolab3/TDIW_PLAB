@@ -6,7 +6,12 @@
                 <div class="a-calçat">
                     <img onclick="return carregarProd('<?php echo $producteCal["id"]; ?>');" src="imgs/producte<?php echo $producteCal["id"]; ?>.webp" />
                     <h2> <?php echo $producteCal["preu_actual"] ?>€ </h2>
-                    <button class="boto-afegir"> Afegir </button>
+                    <form method="post" action="controladors/inserirProd.php">
+                        <input type="hidden" name="productes_id" value="<?php echo $producteCal['id']; ?>">
+                        <input type="hidden" name="preu_historic" value="<?php echo $producteCal['preu_actual']; ?>">
+                        <input type="hidden" name="unitats_demanades" value="1"></p>
+                        <button class="boto-afegir" name="enviarProd">Afegir</button>
+                    </form>
                 </div>
             <?php endforeach; ?>
         </div>
