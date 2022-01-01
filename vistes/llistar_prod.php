@@ -1,6 +1,6 @@
 
 <div class="producte_indiv">
-    <img src="/TDIW_PLAB/imgs/producte<?php echo $prod['id']; ?>.webp"></img>
+    <img src="/TDIW_PLAB/<?php echo $prod['img']; ?>"></img>
     <h1><?php echo $prod['nom']; ?></h1>
     <p><?php echo $prod['descripcio']; ?></p>
     <h2><?php echo $prod['preu_actual']; ?>€</h2>

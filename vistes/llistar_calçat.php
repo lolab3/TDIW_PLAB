@@ -4,7 +4,7 @@
         <div class= "apartat-calçat" id="calçat">
             <?php foreach ($calçat as $producteCal): ?>
                 <div class="a-calçat">
-                    <img onclick="return carregarProd('<?php echo $producteCal["id"]; ?>');" src="imgs/producte<?php echo $producteCal["id"]; ?>.webp" />
+                    <img onclick="return carregarProd('<?php echo $producteCal["id"]; ?>');" src=<?php echo $producteCal["img"]; ?> />
                     <h2> <?php echo $producteCal["preu_actual"] ?>€ </h2>
                     <form method="post" action="controladors/inserirProd.php">
                         <input type="hidden" name="productes_id" value="<?php echo $producteCal['id']; ?>">
