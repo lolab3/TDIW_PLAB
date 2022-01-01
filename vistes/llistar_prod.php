@@ -7,9 +7,9 @@
     <form method="post" action="controladors/inserirProd.php">
         <input type="hidden" name="productes_id" value="<?php echo $prod['id']; ?>">
         <input type="hidden" name="preu_historic" value="<?php echo $prod['preu_actual']; ?>">
-        <p>Quantitat: <input type="number" name="unitats_demanades" value="1"></p>
-        <p><button class="boto-mesmenys" name="Botomes">+</button></p>
-        <p><button class="boto-mesmenys" name="Botomenys">-</button></p>
+        <input type="number" name="unitats_demanades" value="1">
+        <button type="button" class="boto-mesmenys">+</button>
+        <button type="button" class="boto-mesmenys">-</button>
         <p><button class="boto-afegir-indiv" type="submit" name="enviarProd">Afegir</button></p>
     </form>
 </div>

@@ -26,6 +26,9 @@
         include __DIR__ . '/../vistes/confirmaCompra.php';
     }
 
-    else{?>
+    else{ ?>
         <a href="/TDIW_PLAB/index.php?accio=llistar-iniciasessio"><p>Has d'iniciar sessió primer</p></a>
     <?php } ?>
+
+
+
