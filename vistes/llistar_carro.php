@@ -24,7 +24,9 @@
 
     <a href="/TDIW_PLAB/index.php?accio=eliminarCistella" class="link" ><p>Buidar cistella</p></a>
 
-    <p><button class="boto-confirma-compra" onclick="return confirmaCompra()" type="submit">Confirmar compra</button></p>
+    <div class="boto-confirma-compra">
+        <p><button onclick="return confirmaCompra()" type="submit" >Confirmar compra</button></p>
+    </div>
 </div>
 </div>
 

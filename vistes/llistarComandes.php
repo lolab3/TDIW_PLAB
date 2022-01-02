@@ -1,5 +1,6 @@
 <div class="main">
 <h1>Les meves comandes</h1>
+    <?php echo nl2br("\n\n\n");?>
     <?php $n=0; ?>
     <?php $a=1; ?>
     <?php foreach ($prods as $prod):?>

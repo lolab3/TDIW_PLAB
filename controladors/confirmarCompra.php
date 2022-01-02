@@ -2,7 +2,7 @@
     session_start();
     error_reporting(E_ALL ^ E_NOTICE);
 
-    if(isset($_SESSION['ID'])) {
+    if(isset($_SESSION['ID']) and ($_SESSION['total_productes'] > "0")) {
         require_once __DIR__ . '/../models/connectaBD.php';
         require_once __DIR__ . '/../models/inserirProd.php';
         require_once __DIR__ . '/../models/consultaProds.php';
@@ -24,11 +24,11 @@
         }
 
         include __DIR__ . '/../vistes/confirmaCompra.php';
+    }else{
+        include __DIR__ . '/../vistes/noConfirmaCompra.php';
     }
 
-    else{ ?>
-        <a href="/TDIW_PLAB/index.php?accio=llistar-iniciasessio"><p>Has d'iniciar sessió primer</p></a>
-    <?php } ?>
+?>
 
 
 
