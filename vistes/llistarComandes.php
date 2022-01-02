@@ -1,5 +1,5 @@
-<h1>Les meves comandes</h1>
 <div class="main">
+<h1>Les meves comandes</h1>
     <?php $n=0; ?>
     <?php $a=1; ?>
     <?php foreach ($prods as $prod):?>
