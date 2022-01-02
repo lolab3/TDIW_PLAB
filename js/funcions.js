@@ -31,6 +31,15 @@ function confirmaCompra() {
     })
 }
 
+function llistarComandes() {
+    $.ajax({
+        url: "/TDIW_PLAB/index.php?accio=llistar-comandes", success:
+            function(result){
+                $(".main").html(result);
+            }
+    })
+}
+
 
 
 

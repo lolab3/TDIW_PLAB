@@ -23,6 +23,7 @@
 <div class="icon-menu">
     <a href="/TDIW_PLAB/index.php?accio=llistar-registrarte">Registra't</a>
     <a href="/TDIW_PLAB/index.php?accio=llistar-iniciasessio">Inicia sessió</a>
+    <a onclick="return llistarComandes();">Les meves comandes</a>
     <a onclick="return carregarCarro();"> Cistella de la compra</a>
     <label for="btn-menu">✖️</label>
 
