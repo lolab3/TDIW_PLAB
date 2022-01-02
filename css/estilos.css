@@ -241,3 +241,11 @@ input{
     font-size: 30px;
     font-family: helvetica;
 }
+
+.centrar{
+    margin-left: 70px;
+}
+
+.centrar1{
+    text-align: center;
+}

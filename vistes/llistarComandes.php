@@ -1,5 +1,8 @@
 <div class="main">
+    <div class="centrar1">
 <h1>Les meves comandes</h1>
+    </div>
+    <div class="centrar">
     <?php echo nl2br("\n\n\n");?>
     <?php $n=0; ?>
     <?php $a=1; ?>
@@ -19,6 +22,7 @@
         <h3><?php echo "Cost total: {$prod['preu_total']}€";?></h3>
         <?php echo nl2br("\n\n\n");?>
     <?php endforeach; ?>
+</div>
 </div>
 
 <!--
