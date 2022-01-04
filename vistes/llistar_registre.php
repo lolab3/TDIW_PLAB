@@ -27,7 +27,7 @@
             <div class="form-item" style="grid-area: codi_postal;">
                 <p>Codi postal:</p> <input type="number" name="codi_postal" size="5" min="1" max="99999" placeholder="Codi Postal">
             </div>
-            <div class="form-item" style="grid-area: submit;">
+            <div class="form-item" style="grid-area: submit;"
                 <p>Registrar-me</p><input type="submit" name="enviar" id="submit-btn">
             </div>
             <div class="inicia" style="grid-area: inicia;">

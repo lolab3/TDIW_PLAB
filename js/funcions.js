@@ -40,6 +40,14 @@ function llistarComandes() {
     })
 }
 
+function editarPerfil() {
+    $.ajax({
+        url: "/TDIW_PLAB/index.php?accio=llistar-perfil", success:
+            function (result){
+                $(".main").html(result);
+            }
+    })
+}
 
 
 

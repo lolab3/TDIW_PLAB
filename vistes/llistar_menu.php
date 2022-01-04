@@ -21,6 +21,7 @@
             <a href="/TDIW_PLAB/index.php?accio=llistar-iniciasessio">Inicia sessió</a>
             <a onclick="return llistarComandes();">Les meves comandes</a>
             <a onclick="return carregarCarro();"> Cistella de la compra</a>
+            <a onclick="return editarPerfil();">Editar perfil</a>
         </div>
     </div>
 </div>

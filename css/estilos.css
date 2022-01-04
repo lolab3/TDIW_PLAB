@@ -264,3 +264,27 @@ label{
     opacity: 1;
     visibility: visible;
 }
+
+.layout-perfil{
+    margin: 5rem 15rem;
+    text-align: left;
+}
+
+
+input {
+    border: 2px solid #1f232b;
+    border-radius: 0.2rem;
+    padding: 1.5rem 1rem;
+    margin: 10px 0px;
+    min-width: 12rem;
+    width: 100%;
+}
+
+.perfil-options{
+    border-radius: 0.75rem;
+    border: 2px solid #15181f;
+
+    padding: 2rem 2rem;
+
+}
+

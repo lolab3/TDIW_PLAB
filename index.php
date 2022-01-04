@@ -60,6 +60,9 @@
             case 'confirmaCompra':
                 include __DIR__ . '/controladors/confirmarCompra.php';
                 break;
+            case 'llistar-perfil':
+                include __DIR__ . '/controladors/cont_edicio_perfil.php';
+                break;
             case 'home':
                 include __DIR__ . '/recurs_home.php';
                 break;
