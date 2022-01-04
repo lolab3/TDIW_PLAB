@@ -134,7 +134,7 @@ ul {
     bottom: 10px;
 }
 
-.register a:hover, .navegador a:hover {
+.register a:hover, .navegador a:hover, .perfil:hover {
     background-color: gray;
     transition: 0.3s;
     border-radius: 0.2rem;
@@ -201,34 +201,6 @@ label{
     cursor: pointer;
 }
 
-input{
-    display: none;
-}
-
-.icon-menu{
-    position: relative;
-    background-color: #15181f;
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    visibility: visible;
-}
-
-.btn-menu:checked ~ .icon-menu{
-    visibility: hidden;
-}
-.icon-menu a{
-    display: block;
-    padding: 1rem 1rem;
-    margin-left: 20px;
-
-}
-.icon-menu a:hover, label:hover{
-    background-color: gray;
-    transition: 0.3s;
-    border-radius: 0.2rem;
-}
-
 .link{
     color:black;
     margin: auto;
@@ -248,4 +220,47 @@ input{
 
 .centrar1{
     text-align: center;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    left: -200px;
+    top: calc(100% + .25rem);
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+    z-index: 2;
+}
+
+.perfil{
+    background: none;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    padding: 1rem 1rem;
+    font-size: 20px;
+}
+
+
+.dropdown-content a{
+    display: block;
+    padding: 1rem 1rem;
+
+}
+.dropdown-content a:hover {
+    background-color: #15181f;
+    transition: 0.3s;
+    border-radius: 0.2rem;
+}
+
+.dropdown:hover > .dropdown-content {
+    opacity: 1;
+    visibility: visible;
 }
