@@ -31,7 +31,7 @@
                 <p>Registrar-me</p><input type="submit" name="enviar" id="submit-btn">
             </div>
             <div class="inicia" style="grid-area: inicia;">
-                <a href="/TDIW_PLAB/index.php?accio=llistar-iniciasessio"><p>Ja tens un compte? Inicia sessió aqui</p></a>
+                <a href="/TDIW_PLAB/index.php?accio=llistar-iniciasessio"><p>Ja tens un compte? Inicia sessió aquí</p></a>
             </div>
         </div>
     </form>
