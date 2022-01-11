@@ -1,6 +1,7 @@
 <html>
     <div class="layout-perfil">
         <div class="perfil-options">
+            <form method="post" action="modificar_usuari.php">
             <div class="nom" style="grid-area: nom;">
                 <p>Nom: </p> <input type="text" name="nom" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)" placeholder="Nom complet" value="<?php echo $usuari['nom']; ?>">
             </div>
@@ -26,6 +27,7 @@
             <div class="actualitzar-perfil">
                 <input type="submit" name="Actualitza" id="submit-btn">
             </div>
+            </form>
         </div>
     </div>
 </html>
