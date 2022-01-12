@@ -1,7 +1,7 @@
 <html>
     <div class="layout-perfil">
         <div class="perfil-options">
-            <form method="post" action="modificar_usuari.php">
+            <form method="post" action="controladors/modificar_usuari.php">
             <div class="nom" style="grid-area: nom;">
                 <p>Nom: </p> <input type="text" name="nom" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)" placeholder="Nom complet" value="<?php echo $usuari['nom']; ?>">
             </div>
@@ -10,9 +10,6 @@
             </div>
             <div class="contrassenya" style="grid-area: contra;">
                 <p>Nova contrassenya: </p> <input type="Password" name="contrasenya" placeholder="Password">
-            </div>
-            <div class="confirmar-contrassenya" style="grid-area: conf-contra;">
-                <p>Confirma la nova contrassenya: </p> <input type="Password" name="contrasenya" placeholder="Password">
             </div>
             <div class="adreça" style="grid-area: adreça;">
                 <p>Adreça: </p> <input type="text" name="adreca" required maxlength="30" placeholder="Adreça" value="<?php echo $usuari['adreca']; ?>" >
