@@ -10,5 +10,9 @@
     $connexio = connectaBD();
     $resultat = getProd($connexio, $llista_ids);
 
-    include __DIR__ . '/../vistes/llistar_carro.php';
+    if (isset($_SESSION['ID'])) {
+        include __DIR__ . '/../vistes/llistar_carro.php';
+    } else {
+        include __DIR__ . '/../vistes/noLlistarcarro.php';
+    }
 ?>
