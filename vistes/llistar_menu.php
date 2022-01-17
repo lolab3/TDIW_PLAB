@@ -19,6 +19,7 @@
         <div class="dropdown-content">
             <a href="/TDIW_PLAB/index.php?accio=llistar-registrarte">Registra't</a>
             <a href="/TDIW_PLAB/index.php?accio=llistar-iniciasessio">Inicia sessió</a>
+            <a href="/TDIW_PLAB/index.php?accio=tancar-sessio">Tancar sessió</a>
             <a onclick="return llistarComandes();">Les meves comandes</a>
             <a onclick="return carregarCarro();"> Cistella de la compra</a>
             <a onclick="return editarPerfil();">Editar perfil</a>
