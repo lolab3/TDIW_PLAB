@@ -11,7 +11,6 @@ Accés als logs
 https://deic-docencia.uab.cat/TDIW/tdiw-k11/
 
 Trobareu els logs del darrer dia en format text pla, i els logs anteriors (fins a una setmana) en format comprimit
-
 Links colors:
 https://colorhunt.co/palette/fcffa6c1ffd7b5deffcab8ff
 https://colorhunt.co/palette/fef1e6f9d5a7ffb08590aacb
